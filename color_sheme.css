@@ -1,0 +1,32 @@
+/* CSS - Каскадные Таблицы Стилей */
+/* Адрес цветовой схемы: https://colorscheme.ru/#2P21TvKvfw0w00RaRCo--QXq--Jp */
+
+
+/* HEX коды */
+
+.primary-0 { color: #37b437 }		/* Основной Цвет */
+.primary-1 { color: #269526 }
+.primary-2 { color: #018101 }
+.primary-3 { color: #3ae33a }
+.primary-4 { color: #67e367 }
+
+.complement-0 { color: #af0000 }	/* Дополнительный Цвет */
+.complement-1 { color: #bb3030 }
+.complement-2 { color: #730000 }
+.complement-3 { color: #fc4141 }
+.complement-4 { color: #fc7373 }
+
+
+/* RGBA коды */
+
+.primary-0 { color: rgba( 55, 180,  55, 1) }		/* Основной Цвет */
+.primary-1 { color: rgba( 38, 149,  38, 1) }
+.primary-2 { color: rgba(  1, 129,   1, 1) }
+.primary-3 { color: rgba( 58, 227,  58, 1) }
+.primary-4 { color: rgba(103, 227, 103, 1) }
+
+.complement-0 { color: rgba(175,   0,   0, 1) }		/* Дополнительный Цвет */
+.complement-1 { color: rgba(187,  48,  48, 1) }
+.complement-2 { color: rgba(115,   0,   0, 1) }
+.complement-3 { color: rgba(252,  65,  65, 1) }
+.complement-4 { color: rgba(252, 115, 115, 1) }
