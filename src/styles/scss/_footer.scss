@@ -1,0 +1,13 @@
+footer {
+    width: 100vw;
+    height: 54px;
+    background-color: $footer-color;
+    align-self: flex-end;
+
+    p {
+        @include footer-font;
+        position: relative;
+        color: white;
+        margin: 17px auto 18px 5vw;
+    }
+}

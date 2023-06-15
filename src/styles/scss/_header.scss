@@ -1,0 +1,28 @@
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: $primary-green;
+    display: grid;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+
+    #main-h1 {
+        @include main-header-font;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        left: 5vw;
+        top: 3vh;
+        margin: 0;
+    }
+    .header-navbar {
+        justify-self: flex-end;
+        align-self: flex-end;
+        margin: 0 auto 21px 40vw;
+        width: 57vw;
+        display: flex;
+        justify-content: space-around;
+
+        .header-nav-link {
+            @include navbar-link-font;
+        }
+    }
+}
