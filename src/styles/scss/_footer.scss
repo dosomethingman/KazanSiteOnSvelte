@@ -1,8 +1,9 @@
 footer {
+    position: absolute;
     width: 100vw;
     height: 54px;
     background-color: $footer-color;
-    align-self: flex-end;
+    bottom: 0;
 
     p {
         @include footer-font;

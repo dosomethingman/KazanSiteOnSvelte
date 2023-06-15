@@ -1,0 +1,18 @@
+main {
+    display: grid;
+
+    .main-article {
+        width: 72vw;
+        justify-self: center;
+        margin-top: 80px;
+
+        h1 {
+            @include paragraph-header-font;
+            margin: 0;
+        }
+        p {
+            @include paragraph-text-font;
+            margin-top: 25px;
+        }
+    }
+}
