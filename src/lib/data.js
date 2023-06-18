@@ -1,22 +1,78 @@
 export const posts = [
     {
         slug: "history",
-        title: "История",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dignissim neque, vel consequat erat. Pellentesque vitae massa interdum, maximus metus et, malesuada neque. Etiam eget sodales libero. Ut tristique, felis ut dignissim semper, mi dui gravida sem, in vehicula diam diam a tellus. Nam ultrices, ipsum nec posuere facilisis, justo risus rutrum ante, non placerat nisi eros quis lectus. Maecenas vel pharetra ligula. Nullam quis interdum lorem.Mauris lacus libero, molestie eget lacus id, placerat auctor odio. Nullam eros leo, tristique ut hendrerit et, condimentum sed massa. Quisque condimentum velit placerat tincidunt gravida. Pellentesque volutpat eleifend maximus. In consequat lacus vitae rutrum facilisis. Nam facilisis ligula sed justo congue, egestas consequat nibh finibus. Suspendisse ut fringilla dolor, ut ornare justo. Praesent tortor ante, dignissim eu dignissim at, auctor sit amet purus. Sed interdum nulla arcu, quis egestas nisi mollis ut. Mauris et vulputate libero. Nulla dictum leo et tellus ultrices hendrerit. Sed nec dignissim quam, id scelerisque nibh. Nulla non tempor quam. Sed viverra, justo sed tempus feugiat, elit libero rutrum nunc, sodales pharetra augue ex vitae mauris.",
+        mainTitle: "История",
+        paragraphs: [
+            {
+                title: "История",
+                text: "Согласно официальной версии, принятой в настоящее время, город был основан более 1000 лет назад. Предполагаемая дата возникновения городского поселения на месте Казани — 1004—1005 годы. Казань была основана как пограничная крепость на севере Волжской Булгарии. В XIII—XIV веках Казань переживает рост, становится важным торговым и политическим центром в составе Золотой Орды. Росту города способствует и удачное географическое положение на пересечении крупных торговых путей, соединяющих Восток и Запад.",
+                imgSrc: `/images/history/Kremlin.jpeg`,
+            },
+            {
+                title: undefined,
+                text: "В 1556 году началось строительство нового, белокаменного Кремля, в опустевший город (татарам было запрещено селиться ближе 30 вёрст от города) вселили 7 тысяч русских, которых по приказу Ивана Грозного переселяли целыми слободами из разных русских городов, а казанские татары были выселены за стену деревянного посада Казани, за проток Булак, положив, таким образом, начало уникальной территории старой Казани — Старо-Татарской слободе. На рубеже XVI и XVII столетий в Казани была основана одна из первых в России типографий. В XVII веке в городе наблюдался экономический рост, были заложены ремесленные слободы, появились первые мануфактуры. В 1708 году Казань стала столицей крупной Казанской губернии. С 1760-х годов застройка города принимает упорядоченный характер, появились деревянные мостовые, мосты через Булак и Казанку. Всего в Казани к концу XVIII века проживало около 22 тысяч человек, а с пригородными слободами — более 40 тысяч, и из них только около десяти процентов — татары. Город стал образовательным и культурным центром Поволжья: в 1758 году в Казани открылась первая в России провинциальная гимназия, в 1771 году — первые медресе, в 1791 году появился постоянный театр. Важным событием стало учреждение в 1804 году Казанского университета — третьего в России, закрепившего за городом статус крупного научного центра. Во второй половине XIX века произошли существенные изменения в инфраструктуре Казани: появились газовое (1874 г.) и электрическое (1897 г.) освещение, конка (1875 г.) и электрический трамвай (1899 г.), телеграф (1859 г.) и телефон (1881 г.).",
+                imgSrc: `/images/history/Zilant.png`,
+            }
+        ],      
     },
+
     {
         slug: "landmarks",
-        title: "Достопримечательности",
-        text: "Mauris quis ipsum viverra, sagittis quam vitae, pharetra nulla. Etiam a rutrum quam, et sodales velit. Praesent porttitor eget odio vitae pellentesque. Praesent convallis, orci vitae commodo euismod, ipsum augue rutrum nulla, eu fringilla elit nisl a mauris. Suspendisse eu arcu a ligula semper fringilla vel id purus. Cras ultricies mollis lectus, id consectetur diam tempor in. Sed accumsan aliquet lacus id tincidunt. Morbi a purus turpis. Maecenas dictum vitae tellus quis placerat. Quisque pretium dictum est non dapibus. Etiam at augue congue, imperdiet ligula vitae, porttitor arcu. In vitae finibus enim. Nullam eget molestie ipsum. Vestibulum vitae est odio. Donec consequat augue vitae dignissim tincidunt. Nulla purus neque, tempor congue blandit mollis, consectetur eget turpis. Vivamus ornare egestas velit, at tincidunt quam efficitur ut. Fusce blandit scelerisque tellus, vitae elementum magna accumsan id. Sed enim nisl, congue sed diam vel, finibus interdum metus. In efficitur semper tellus in volutpat. Donec auctor mauris in nulla tempor dictum. In rhoncus justo vitae neque sagittis posuere. Pellentesque porttitor convallis nibh sit amet tincidunt.",
+        mainTitle: "Достопримечательности",
+        paragraphs: [
+            {
+                title: "Казанский кремль",
+                text: "Древнейшая Казань возникла в начале X века как укреплённая булгарская крепость и располагалась на северо-восточной оконечности кремлёвского холма — вершине мыса[159], образованного террасой левых берегов Волги и Казанки. После монгольского нашествия 1236 года начинается постепенное возвышение Казани, чему способствовал отток булгарского населения из разорённой Батыем столицы Волжской Булгарии города Булгар. В это время южнее кремлёвского холма появляется неукреплённый посад. После распада Золотой Орды Казань становится центром Казанского ханства. Кремль времён Казанского ханства достигает ¾ современной площади и имеет стены, сложенные из дубовых брёвен в виде срубов, засыпанных внутри землёй и камнями. Посад обносится деревянной стеной. Планировка улиц имела запутанный характер и концентрировалась к Кремлю. После падения Казанского Ханства Казань начинает перестраиваться. В 1556 году в Казань прибывают 200 псковских каменщиков, возглавляемых Постником Яковлевым и Иваном Ширяем. К 1568 году были построены 13 каменных башен и значительная часть стен кремля. Ныне белокаменный Кремль, самый южный образец псковского архитектурного стиля в России, включён в свод объектов Всемирного наследия ЮНЕСКО. Он включает в себя одну из самых высоких в Европе и немногочисленных в мире из числа «падающих» башню Сююмбике, Спасскую башню, Благовещенский собор (старейший православный храм в Среднем Поволжье) и многие другие исторические объекты. В 1996—2005 годах на территории Кремля возведена мечеть Кул Шариф по приближённому подобию некогда бывшей там главной мечети ханства. У Кремля до настоящего времени сохранились административные функции — в нём находятся резиденция Президента Татарстана, его аппарат и канцелярия. Поэтому сегодня Казанский Кремль является центром государственности республики. Кремль — излюбленное место многочисленных туристов, приезжающих в Казань специально или оказавшихся здесь проездом. Привлекательны для гостей столицы татарский Эрмитаж, исторические памятники и современные музейные комплексы, торговые ряды, расположенные возле стен Кремля, где можно приобрести множество различных сувениров и подарков. Пожалуй, среди 750 памятников истории и культуры татарского народа именно Казанский Кремль занимает лидирующую позицию — как по популярности среди туристов, посещающих город Казань, так и по значимости для татарского народа. Казанский Кремль расположился в самом центре Казани в начале улицы Кремлёвской у берегов реки Казанки. Общая протяжённость стен кремля немного превышает 1,8 километра. Официальный въезд на территорию Кремля проходит через Спасскую башню; со стороны Казанки в историко-архитектурный заповедник можно пройти через Тайницкую башню, построенную в средние века.",
+                imgSrc: `/images/landmarks/Kremlin2.jpg`,
+            },
+            {
+                title: "Спасская Башня",
+                imgSrc: `/images/landmarks/spasskaya_tower.jpg`,
+            },
+            {
+                title: "Мечеть Кул-Шариф",
+                imgSrc: `/images/landmarks/kul_sharif.jpeg`,
+            },
+            {
+                title: "Башня Сююмбике",
+                imgSrc: `/images/landmarks/siumbike.jpeg`,
+            },    
+        ],
     },
+
     {
         slug: "education",
-        title: "Учебные заведения",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dignissim neque, vel consequat erat. Pellentesque vitae massa interdum, maximus metus et, malesuada neque. Etiam eget sodales libero. Ut tristique, felis ut dignissim semper, mi dui gravida sem, in vehicula diam diam a tellus. Nam ultrices, ipsum nec posuere facilisis, justo risus rutrum ante, non placerat nisi eros quis lectus. Maecenas vel pharetra ligula. Nullam quis interdum lorem.Mauris lacus libero, molestie eget lacus id, placerat auctor odio. Nullam eros leo, tristique ut hendrerit et, condimentum sed massa. Quisque condimentum velit placerat tincidunt gravida. Pellentesque volutpat eleifend maximus. In consequat lacus vitae rutrum facilisis. Nam facilisis ligula sed justo congue, egestas consequat nibh finibus. Suspendisse ut fringilla dolor, ut ornare justo. Praesent tortor ante, dignissim eu dignissim at, auctor sit amet purus. Sed interdum nulla arcu, quis egestas nisi mollis ut. Mauris et vulputate libero. Nulla dictum leo et tellus ultrices hendrerit. Sed nec dignissim quam, id scelerisque nibh. Nulla non tempor quam. Sed viverra, justo sed tempus feugiat, elit libero rutrum nunc, sodales pharetra augue ex vitae mauris.",
+        mainTitle: "Учебные заведения",
+        paragraphs: [
+            {
+                title: "Казанский Федеральный университет",
+                text: "Каза́нский (Приво́лжский) федера́льный университе́т (полное наименование — федеральное государственное автономное образовательное учреждение высшего образования «Казанский (Приволжский) федеральный университет» — один из старейших российских университетов (основан в 1804 году)[2] и один из десяти федеральных университетов (с 2010 года). В 2019 году университет занимал второе место, а в 2021 году - первое место в России по числу иностранных студентов.",
+                imgSrc: `/images/education/kpfu.jpg`,
+            },
+            {
+                title: "Высотное здание КФУ",
+                imgSrc: `/images/education/building.jpg`,
+            },
+            {
+                title: "Казанский авиационный институт",
+                text: "Казанский национальный исследовательский технический университет имени А. Н. Туполева — образован в 1932 году, статус университета получил в 1992 году. 7 октября 2009 года университет получил новый официальный статус национального исследовательского университета.5 марта 1932 года по совместному постановлению Главного управления авиационной промышленности (Глававиапрома) Наркомата тяжёлой промышленности и секретариата Татарского обкома ВКП(б) на базе аэродинамического отделения КГУ был основан Казанский авиационный институт. Ему было передано здание бывшей первой Казанской гимназии. В первое время в институте было два отделения: самолётостроительное и аэродинамическое, причём первое создавалось за счёт перевода в институт всего контингента студентов, аспирантов и преподавателей аэродинамического отделения КГУ, а второе должно было быть сформировано за счёт перевода студентов из других вузов Казани.",
+                imgSrc: `/images/education/kai.jpg`,
+            },
+            {
+                title: "Самолёт ТУ-144 у одного из зданий КНИТУ",
+                imgSrc: `/images/education/plane.jpeg`,
+            },
+        ],       
     },
+
     {
         slug: "recreation",
-        title: "Отдых",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dignissim neque, vel consequat erat. Pellentesque vitae massa interdum, maximus metus et, malesuada neque. Etiam eget sodales libero. Ut tristique, felis ut dignissim semper, mi dui gravida sem, in vehicula diam diam a tellus. Nam ultrices, ipsum nec posuere facilisis, justo risus rutrum ante, non placerat nisi eros quis lectus. Maecenas vel pharetra ligula. Nullam quis interdum lorem.Mauris lacus libero, molestie eget lacus id, placerat auctor odio. Nullam eros leo, tristique ut hendrerit et, condimentum sed massa. Quisque condimentum velit placerat tincidunt gravida. Pellentesque volutpat eleifend maximus. In consequat lacus vitae rutrum facilisis. Nam facilisis ligula sed justo congue, egestas consequat nibh finibus. Suspendisse ut fringilla dolor, ut ornare justo. Praesent tortor ante, dignissim eu dignissim at, auctor sit amet purus. Sed interdum nulla arcu, quis egestas nisi mollis ut. Mauris et vulputate libero. Nulla dictum leo et tellus ultrices hendrerit. Sed nec dignissim quam, id scelerisque nibh. Nulla non tempor quam. Sed viverra, justo sed tempus feugiat, elit libero rutrum nunc, sodales pharetra augue ex vitae mauris.",
+        mainTitle: "Отдых",
+        paragraphs: [
+            {
+                title: "Отдых",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dignissim neque, vel consequat erat. Pellentesque vitae massa interdum, maximus metus et, malesuada neque. Etiam eget sodales libero. Ut tristique, felis ut dignissim semper, mi dui gravida sem, in vehicula diam diam a tellus. Nam ultrices, ipsum nec posuere facilisis, justo risus rutrum ante, non placerat nisi eros quis lectus. Maecenas vel pharetra ligula. Nullam quis interdum lorem.Mauris lacus libero, molestie eget lacus id, placerat auctor odio. Nullam eros leo, tristique ut hendrerit et, condimentum sed massa. Quisque condimentum velit placerat tincidunt gravida. Pellentesque volutpat eleifend maximus. In consequat lacus vitae rutrum facilisis. Nam facilisis ligula sed justo congue, egestas consequat nibh finibus. Suspendisse ut fringilla dolor, ut ornare justo. Praesent tortor ante, dignissim eu dignissim at, auctor sit amet purus. Sed interdum nulla arcu, quis egestas nisi mollis ut. Mauris et vulputate libero. Nulla dictum leo et tellus ultrices hendrerit. Sed nec dignissim quam, id scelerisque nibh. Nulla non tempor quam. Sed viverra, justo sed tempus feugiat, elit libero rutrum nunc, sodales pharetra augue ex vitae mauris.",
+            },
+        ],
     },
 ];

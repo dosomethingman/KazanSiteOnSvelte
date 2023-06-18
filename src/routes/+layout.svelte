@@ -3,6 +3,10 @@
     export let data;
 </script>
 
+<svelte:head>
+    <title>Главная страница</title>
+</svelte:head>
+
 <header class="main-header">
     <h1 id="main-h1">Сайт о Казани</h1>
     <nav class="header-navbar">

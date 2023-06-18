@@ -1,13 +1,14 @@
 footer {
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: 54px;
+    margin-top: auto;
     background-color: $footer-color;
     bottom: 0;
 
     p {
         @include footer-font;
-        position: relative;
+        position: absolute;
         color: white;
         margin: 17px auto 18px 5vw;
     }

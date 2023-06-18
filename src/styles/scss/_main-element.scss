@@ -8,11 +8,16 @@ main {
 
         h1 {
             @include paragraph-header-font;
-            margin: 0;
+            margin: 30px 0;
         }
+
         p {
             @include paragraph-text-font;
-            margin-top: 25px;
+            margin: 25px 0;
+        }
+
+        .par-img {
+            max-width: 600px;
         }
     }
 }

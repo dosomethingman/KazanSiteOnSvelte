@@ -2,7 +2,21 @@
     export let data;
 </script>
 
+<svelte:head>
+    <title>{data.post.mainTitle}</title>
+</svelte:head>
+
 <article class="main-article">
-    <h1>{ data.post.title }</h1>
-    <p>{ data.post.text }</p>
+    {#each data.post.paragraphs as par}
+        {#if par.imgSrc}
+            <img src="{ par.imgSrc }" class="par-img">
+        {/if}
+        {#if par.title}
+            <h1>{ par.title }</h1>
+        {/if}
+        {#if par.text}
+            <p>{ par.text }</p>
+        {/if}
+        <hr>
+    {/each}
 </article>
