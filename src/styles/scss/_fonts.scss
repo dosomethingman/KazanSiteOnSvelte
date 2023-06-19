@@ -37,3 +37,8 @@
 @mixin footer-font {
     @include set-size-weight-family(16px, 400, 'Roboto');
 }
+
+@mixin img-label-font {
+    @include set-size-weight-family(16px, 400, 'Roboto');
+    color: $pagraph-header-color;
+}

@@ -8,16 +8,31 @@ main {
 
         h1 {
             @include paragraph-header-font;
-            margin: 30px 0;
+            margin: 20px 0 15px 0;
         }
 
         p {
             @include paragraph-text-font;
-            margin: 25px 0;
+            margin: 15px 0;
         }
 
-        .par-img {
-            max-width: 600px;
+        .img-container {
+            display: flex;
+            flex-direction: column;
+
+            .par-img {
+                max-width: 600px;
+            }
+
+            .img-label {
+                @include img-label-font;
+                margin: 5px 0 0px;
+            }
+        }
+
+        .paragraph-hr {
+            margin-top: 10px;
+            margin-bottom: 30px;
         }
     }
 }
