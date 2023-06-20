@@ -276,6 +276,15 @@ main .main-article .paragraph-hr {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+main .main-article .main-article-img {
+  max-width: 72vw;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.35));
+}
+@media screen and (max-width: 700px) {
+  main .main-article {
+    max-width: 90vw;
+  }
+}
 
 @media screen and (max-width: 700px) {
   main {

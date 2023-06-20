@@ -3,7 +3,7 @@ main {
     z-index: 1;
 
     .main-article {
-        width: 72vw;
+        width: $big-screen-article-width;
         justify-self: center;
         margin-top: 80px;
 
@@ -40,6 +40,15 @@ main {
             margin-top: 10px;
             margin-bottom: 30px;
         }
+
+        .main-article-img {
+            max-width: $big-screen-article-width;
+            filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.35));
+        }
+
+        @media screen and (max-width: $medium-res-screen) {
+            max-width: $small-screen-article-width;
+        }
     }
 }
 
@@ -48,7 +57,7 @@ main {
         width: 95vw;
 
         .main-article {
-            width: 90vw;
+            width: $small-screen-article-width;
             margin-left: 10px;
             margin-right: 10px;
         }
