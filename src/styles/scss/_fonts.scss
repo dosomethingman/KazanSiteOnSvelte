@@ -25,6 +25,11 @@
 @mixin navbar-link-selected-font {
     @include navbar-link-font();
     font-weight: 700;
+    color: $secondary-red;
+}
+
+@mixin navbar-link-low-res-font {
+    @include set-size-weight-family(16px, 400, 'Roboto');
 }
 
 @mixin paragraph-text-font {
