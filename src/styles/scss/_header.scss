@@ -4,6 +4,7 @@
     background-color: $primary-green;
     display: grid;
     filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+    z-index: 0;
 
     #main-h1 {
         @include main-header-font;
@@ -13,6 +14,7 @@
         top: 3vh;
         margin: 0;
     }
+
     .header-navbar {
         justify-self: flex-end;
         align-self: flex-end;
@@ -20,9 +22,41 @@
         width: 57vw;
         display: flex;
         justify-content: space-around;
+        z-index: 1;
 
         .header-nav-link {
             @include navbar-link-font;
+        }
+
+        .header-nav-link-selected {
+            @include navbar-link-selected-font;
+        }
+
+        .homepage-link {
+            font-size: 22px;
+
+            @media screen and (max-width: $medium-res-screen) {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: $hight-res-screen) {
+            margin-left: auto;
+            justify-self: start;
+            width: 95vw;
+        }
+    }
+
+    .header-navbar-low-res {
+        position: absolute;
+        width: 240px;
+        background-color: $secondary-green;
+        z-index: -1;
+
+        .header-nav-link-low-res {
+            @include navbar-link-font;
+            
+            color: $secondary-red;
         }
     }
 }

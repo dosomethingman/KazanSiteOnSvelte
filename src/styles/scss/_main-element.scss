@@ -22,6 +22,11 @@ main {
 
             .par-img {
                 max-width: 600px;
+                filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.35));
+
+                @media screen and (max-width: $medium-res-screen) {
+                    max-width: 400px;
+                }
             }
 
             .img-label {
@@ -33,6 +38,18 @@ main {
         .paragraph-hr {
             margin-top: 10px;
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: $medium-res-screen) {
+    main {
+        width: 95vw;
+
+        .main-article {
+            width: 90vw;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
 }

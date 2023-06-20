@@ -2,10 +2,6 @@
     export let data;
 </script>
 
-<svelte:head>
-    <title>{data.post.mainTitle}</title>
-</svelte:head>
-
 <article class="main-article">
     {#each data.post.paragraphs as par}
         {#if par.imgSrc}

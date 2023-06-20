@@ -16,6 +16,10 @@
     @include set-size-weight-family(20px, 400, 'Roboto');
     font-style: italic;
     color: white;
+
+    @media screen and (max-width: $hight-res-screen) {
+        font-size: 16px;
+    }
 }
 
 @mixin navbar-link-selected-font {
@@ -27,11 +31,20 @@
     @include set-size-weight-family(18px, 400, 'Roboto');
     color: $paragraph-text-color;
     line-height: 28px;
+
+    @media screen and (max-width: $medium-res-screen) {
+        font-size: 16px;
+        line-height: 23px;
+    }
 }
 
 @mixin paragraph-header-font {
     @include set-size-weight-family(40px, 300, 'Roboto');
     color: $pagraph-header-color;
+
+    @media screen and (max-width: $medium-res-screen) {
+        font-size: 30px;
+    }
 }
 
 @mixin footer-font {

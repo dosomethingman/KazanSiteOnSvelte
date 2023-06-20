@@ -1,4 +1,9 @@
 export const posts = [
+    /*{
+        slug: "/",
+        mainTitle: "Главная страница",
+    },*/
+
     {
         slug: "history",
         mainTitle: "История",
