@@ -15,6 +15,29 @@
         margin: 0;
     }
 
+    .button-container {
+        @include basic-side-button;
+        top: 10vh;
+        left: 5vw;
+
+        .side-button {
+            @include basic-bar-and-btn;
+        }
+    
+        .bar-unfolded {
+            @include basic-bar-and-btn;
+            #bar1 {
+                transform: rotateZ(25deg);
+            }
+            #bar3 {
+                transform: rotateZ(336deg);
+            }
+            #bar2 {
+                background-color: transparent;
+            }
+        }
+    }   
+
     .header-navbar {
         justify-self: flex-end;
         align-self: flex-end;
@@ -25,6 +48,7 @@
 
         .header-nav-link {
             @include navbar-link-font;
+            @include hover-link;
         }
 
         .header-nav-link-selected {

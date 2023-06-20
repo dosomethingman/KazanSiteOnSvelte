@@ -6,7 +6,7 @@
     {#each data.post.paragraphs as par}
         {#if par.imgSrc}
             <div class="img-container">
-                <img src="{ par.imgSrc }" class="par-img">
+                <img src="{ par.imgSrc }" class="par-img" alt="{ par.imgLabel }">
                 {#if par.imgLabel}
                     <span class="img-label">{ par.imgLabel }</span>
                 {/if}

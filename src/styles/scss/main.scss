@@ -1,9 +1,10 @@
 @import "./_variables";
 @import "./_fonts";
+@import "./_mixins";
+@import "./_other";
 @import "./_header";
 @import "./_footer";
 @import "./_main-element";
-@import "./_other";
 
 body {
     margin: 0;

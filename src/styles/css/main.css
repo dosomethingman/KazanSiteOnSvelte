@@ -1,4 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+.navbar-low-res {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  top: 15vh;
+  margin-left: 10px;
+  background-color: #67E367;
+  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
+  border: 2px solid lawngreen;
+  border-radius: 0 0 15px 15px;
+  z-index: 2;
+  transform: translateY(-110%);
+}
+.navbar-low-res .nav-link-low-res {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: white;
+  font-weight: 700;
+  color: #FC4141;
+}
+@media screen and (max-width: 1100px) {
+  .navbar-low-res .nav-link-low-res {
+    font-size: 16px;
+  }
+}
+.navbar-low-res .nav-link-low-res:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+}
+.navbar-low-res .nav-link-low-res, .navbar-low-res .homepage-link-low-res {
+  margin: 10px 10px;
+}
+
+.navbar-low-res-unfolded {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  top: 15vh;
+  margin-left: 10px;
+  background-color: #67E367;
+  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
+  border: 2px solid lawngreen;
+  border-radius: 0 0 15px 15px;
+  z-index: 2;
+  transform: translateY(-110%);
+  transform: translateY(0);
+}
+.navbar-low-res-unfolded .nav-link-low-res {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: white;
+  font-weight: 700;
+  color: #FC4141;
+}
+@media screen and (max-width: 1100px) {
+  .navbar-low-res-unfolded .nav-link-low-res {
+    font-size: 16px;
+  }
+}
+.navbar-low-res-unfolded .nav-link-low-res:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+}
+.navbar-low-res-unfolded .nav-link-low-res, .navbar-low-res-unfolded .homepage-link-low-res {
+  margin: 10px 10px;
+}
+
 .main-header {
   width: 100vw;
   height: 15vh;
@@ -19,6 +94,58 @@
   top: 3vh;
   margin: 0;
 }
+.main-header .button-container {
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  appearance: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  top: 10vh;
+  left: 5vw;
+}
+.main-header .button-container .side-button {
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  appearance: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.main-header .button-container .side-button .bar {
+  width: 50px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  transform-origin: 0 50%;
+}
+.main-header .button-container .bar-unfolded {
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  appearance: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.main-header .button-container .bar-unfolded .bar {
+  width: 50px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  transform-origin: 0 50%;
+}
+.main-header .button-container .bar-unfolded #bar1 {
+  transform: rotateZ(25deg);
+}
+.main-header .button-container .bar-unfolded #bar3 {
+  transform: rotateZ(336deg);
+}
+.main-header .button-container .bar-unfolded #bar2 {
+  background-color: transparent;
+}
 .main-header .header-navbar {
   justify-self: flex-end;
   align-self: flex-end;
@@ -38,6 +165,10 @@
   .main-header .header-navbar .header-nav-link {
     font-size: 16px;
   }
+}
+.main-header .header-navbar .header-nav-link:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
 }
 .main-header .header-navbar .header-nav-link-selected {
   font-size: 20px;
@@ -156,38 +287,6 @@ main .main-article .paragraph-hr {
     margin-right: 10px;
   }
 }
-.navbar-low-res {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  display: flex;
-  flex-direction: column;
-  top: 15vh;
-  margin-left: 10px;
-  background-color: #67E367;
-  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.75));
-  border-radius: 0 0 15px 15px;
-  z-index: 2;
-  transform: translateY(-110%);
-}
-.navbar-low-res .nav-link-low-res {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  color: white;
-  font-weight: 700;
-  color: #FC4141;
-}
-@media screen and (max-width: 1100px) {
-  .navbar-low-res .nav-link-low-res {
-    font-size: 16px;
-  }
-}
-.navbar-low-res .nav-link-low-res, .navbar-low-res .homepage-link-low-res {
-  margin: 10px 10px;
-}
-
 body {
   margin: 0;
   min-width: 100vw;

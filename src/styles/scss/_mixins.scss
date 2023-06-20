@@ -1,0 +1,50 @@
+@mixin basic-side-button {
+    position: absolute;
+    width: $bar-width;
+    height: $bar-height * 5;
+    appearance: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+@mixin basic-bar {
+    .bar {
+        width: $bar-width;
+        height: $bar-height;
+        margin-bottom: $bar-height;
+        background-color: white;
+        transform-origin: 0 50%;
+    }
+}
+
+@mixin basic-bar-and-btn {
+    @include basic-side-button;
+    @include basic-bar;
+}
+
+@mixin navbar-low-res-mixin {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    top: $header-hight;
+    margin-left: 10px;
+    background-color: $secondary-green;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
+    border: 2px solid lawngreen;
+    border-radius: 0 0 15px 15px;
+    z-index: 2;
+
+    transform: translateY(-110%);
+
+    .nav-link-low-res {
+        @include navbar-link-selected-font;
+        @include hover-link;
+    }
+
+    .nav-link-low-res, .homepage-link-low-res {
+        margin: 10px 10px;
+    }
+}
